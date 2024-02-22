@@ -9,7 +9,7 @@ public class Movie {
 
 
     public Movie(String title, String director,
-                 int yearIsCreated, boolean isInColor, int lengthInMinutes, String genre, int rating){
+                 int yearIsCreated, boolean isInColor, int lengthInMinutes, String genre, int rating) {
         this.title = title;
         this.director = director;
         this.yearIsCreated = yearIsCreated;
@@ -19,32 +19,71 @@ public class Movie {
         this.rating = rating;
 
     }
-    public String getTitle(){
+
+    public String getTitle() {
         return title;
     }
-    public String getDirector(){
+
+    public String getDirector() {
         return director;
     }
-    public int getYearIsCreated(){
+
+    public int getYearIsCreated() {
         return yearIsCreated;
     }
-    public boolean getisInColor(){
+
+    public boolean getisInColor() {
         return isInColor;
     }
-    public int getLengthInMinutes(){
+
+    public int getLengthInMinutes() {
         return lengthInMinutes;
     }
-    public String getGenre(){
+
+    public String getGenre() {
         return genre;
     }
-    public int getRating(){
+
+    public int getRating() {
         return rating;
     }
-    public String toString(){
-        return  "Title: "  + title +  ", Director: " + director  + ", Color: " + (isInColor ? "Yes" : "No") +
-                ", Lenght: " + lengthInMinutes + " minutes" + ", Genre: " + genre + ", Rating: " + rating + " out of 10!";
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    public void setYearCreated(int yearIsCreated) {
+        this.yearIsCreated = yearIsCreated;
+    }
+
+    public void setIsinColor(boolean isInColor) {
+        this.isInColor = isInColor;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+
+    }
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+    public void setLengthInMinutes(int lengthInMinutes) {
+        this.lengthInMinutes = lengthInMinutes;
+    }
+
+    public String toString() {
+        return "Title: " + title +
+                ", Director: " + director +
+                ", Year created: " + yearIsCreated +
+                ", Color: " + (isInColor ? "Yes" : "No") +
+                ", Length: " + lengthInMinutes + " minutes" +
+                ", Genre: " + genre +
+                ", Rating: " + rating + " out of 10!";
 
 
+    }
 }
